@@ -9,6 +9,7 @@ function __construct(){
 
 
 }
+// kjgaghakgh
 
 function index(){
     $this->load->view('plogin');

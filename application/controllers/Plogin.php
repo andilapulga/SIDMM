@@ -10,7 +10,6 @@ function __construct(){
 
 }
 
-
 function index(){
     $this->load->view('plogin');
 }

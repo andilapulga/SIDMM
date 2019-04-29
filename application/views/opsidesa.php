@@ -29,36 +29,16 @@
                 <br><br>
                 <div class="row">
                     <div class="col-md-1"></div>
-                    <div class="col-md-10">
+                    <div class="col-md-10 ">
                         <div class="row">
-                            <div class="col-md-4 mb-2">
-                
-                                 <a href="<?php echo base_url()?>login" type="button" class="btn btn-success btn-lg btn-block"> jungka gajah</a>
+                      
+                        <?php foreach($nama_desa as $desa) { ?>
+                        <div class="col-md-4 mb-2 ">
+                                    
+                                 <a href="<?php echo base_url()?>login" type="button" class="btn btn-success btn-lg btn-block"><?php echo ($desa->nama_desa)?>                                           </a>
+                                 
                             </div>
-                            <div class="col-md-4 mb-2">
-                            <a href="<?php echo base_url()?>login"type="button" class="btn btn-success btn-lg btn-block"></h3> baroh kuta batee</a>
-                            </div>
-                            <div class="col-md-4 mb-2">
-                            <a href="<?php echo base_url()?>login" type="button" class="btn btn-success btn-lg btn-block"></h3>paya bili</a></div>
-                            <div class="col-md-4 mb-2">
-                            <a href="<?php echo base_url()?>login" type="button" class="btn btn-success btn-lg btn-block"></h3>nibong</a></div>
-                            <div class="col-md-4 mb-2">
-                            <a href="<?php echo base_url()?>login" type="button" class="btn btn-success btn-lg btn-block"></h3>paya kambuk</a></div>
-                            <div class="col-md-4 mb-2">
-                            <a href="<?php echo base_url()?>login" type="button" class="btn btn-success btn-lg btn-block"></h3>pulo drien beukah</a></div>
-                            <div class="col-md-4 mb-2">
-                            <a href="<?php echo base_url()?>login" type="button" class="btn btn-success btn-lg btn-block"></h3>beuringen</a></div>
-                            <div class="col-md-4 mb-2">
-                            <a href="<?php echo base_url()?>login" type="button" class="btn btn-success btn-lg btn-block"></h3>menye peut</a></div>
-                            <div class="col-md-4 mb-2">
-                            <a href="<?php echo base_url()?>login" type="button" class="btn btn-success btn-lg btn-block"></h3>menye payong</a></div>
-                            <div class="col-md-4 mb-2">
-                            <a href="<?php echo base_url()?>login" type="button" class="btn btn-success btn-lg btn-block"></h3>blang reuma</a></div>
-                            <div class="col-md-4 mb-2">
-                            <a href="<?php echo base_url()?>login" type="button" class="btn btn-success btn-lg btn-block"></h3>keudee karieng</a></div>
-                            <div class="col-md-4 mb-2">
-                            <a href="<?php echo base_url()?>login" type="button" class="btn btn-success btn-lg btn-block"></h3>pulo bluek</a></div>
-                            
+                            <?php }?>
                             <div class="col-md-12 mb-0">
                             <a href="<?php echo base_url()?>tambahdesa" type="button" class="btn btn-primary btn-block"></h3>Tambah Desa</a></div>
                     

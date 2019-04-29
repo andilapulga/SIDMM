@@ -13,11 +13,8 @@ class Tambahdesa extends CI_Controller {
 		$this->load->view('tambahdesa');
 	}
 
-						public function tambah(){
-						$data=array(
-						'nama_desa'=>$this->input->post('pnamaDesa')
-						);
-					$dr=$this->M_tambahdesa->inputdata($data);
-echo $dr;
+	public function tambah(){
+		$data=array('nama_desa'=>$this->input->post('pnamadesa'));
+		echo  $this->M_tambahdesa->inputdata($data);
 						}
 	}

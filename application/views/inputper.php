@@ -57,6 +57,23 @@
                     
                       </div>
                       </div>
+
+                      <div class="form-group row">
+                      <label for="inputNama" class="col-sm-3 col-form-label"><strong>ID Desa</strong></label>
+                      <div class="col-sm-9">
+                      <select class="form-control" id="sel1">
+                      <option value="">Pilih Desa . . . . </option>                     <?php
+                     foreach ($ambildesa as $key) {
+                    ?>
+                    <option value="<?php echo $key->id_desa?>"><?php echo $key->nama_desa ?></option>
+
+                    <?php
+                    }
+                     ?>
+                     </select>
+                      </div>
+                      </div>
+
                       <div class="form-group row">
                       <label for="inputNoHp" class="col-sm-3 col-form-label"><strong>Nomor Hp</strong></label>
                       <div class="col-sm-9">
@@ -87,5 +104,6 @@
 <!-- page-content" -->
 </div>
 <!-- page-wrapper -->
+<script src="<?php echo base_url(); ?>asset/js/inputper.js"></script>
 </body>
 </html>

@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php
     $this->load->view('vendor/src');
+    
     ?>
+    
     <title>Document</title>
 </head>
 <body>
@@ -40,7 +42,7 @@
                   
               </form>
               <div class="form-group row">
-                      <button class="btn btn-dark col-sm-3" id="submit" >submit</button>
+                      <button class="btn btn-dark col-sm-3" id="submitu" >submit</button>
                     <div id="pesan"></div>
                   </div>
                 </div>
@@ -59,5 +61,6 @@
 <!-- page-content" -->
 </div>
 <!-- page-wrapper -->
+<script src="<?php echo base_url();?>asset/js/tambahdesa.js"></script>
 </body>
 </html>

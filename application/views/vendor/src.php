@@ -13,6 +13,5 @@
         
 <script src="<?php echo base_url(); ?>asset/js/sidebar.js"></script>
 <script src="<?php echo base_url(); ?>asset/js/sidebarpen.js"></script>
-<script src="<?php echo base_url(); ?>asset/js/inputpen.js"></script>
-<script src="<?php echo base_url(); ?>asset/js/tambahdesa.js"></script>
-<script src="<?php echo base_url(); ?>asset/js/input.js"></script>
+
+

@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Inputper extends CI_Controller {
 
-	/**
+	/*
 	 * Index Page for this controller.
 	 *
 	 * Maps to the following URL
@@ -27,17 +27,21 @@ class Inputper extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('inputper');
+		$this->data['ambildesa']= $this->M_inputper->ambildesa();
+		$this->load->view('inputper', $this->data);
 	}
 
-						public function tambah(){
-						$data=array(
+	// tambah perangkat
+	public function tambah(){
+	$data=array(
 						'username'=>$this->input->post('pusername'),
 						'password'=>$this->input->post('ppassword'),
 						'nama'=>$this->input->post('pnama'),
-						'id_desa'=>$this->input->post('pidDesa'),
+						'level'=>$this->input->post('plevel'),
+						
 						'no_hp'=>$this->input->post('pNoHp')
 						);
+	
 					$dr=$this->M_inputper->inputdata($data);
 echo $dr;
 						}

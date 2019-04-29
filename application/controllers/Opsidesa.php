@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class opsidesa extends CI_Controller {
 
+
 	/**
 	 * Index Page for this controller.
 	 *
@@ -18,8 +19,15 @@ class opsidesa extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct(){
+		parent::__construct();		
+		$this->load->model('M_inputper');
+		$this->load->helper('url');
+	}
 	public function index()
 	{
-		$this->load->view('opsidesa');
+		$this->data['nama_desa']= $this->M_inputper->ambildesa();
+		$this->load->view('opsidesa',$this->data);
+		
 	}
 }

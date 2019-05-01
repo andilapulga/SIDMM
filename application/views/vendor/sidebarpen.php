@@ -63,7 +63,15 @@
               <i class="far fa-eye"></i>
               <span>Lihat Laporan</span>
             </a>
-          </li>   
+          </li>
+
+          <li>
+            <a href="plogin/Logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Log Out</span>
+            </a>
+          </li> 
+
       </div>
       <!-- sidebar-menu  -->
     </div>

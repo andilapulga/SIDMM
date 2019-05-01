@@ -39,7 +39,7 @@
             <span>General</span>
           </li>
           <li>
-            <a href="<?php echo base_url(); ?>">
+            <a href="#">
               <i class="fas fa-tachometer-alt"></i>
               <span>Dashboard</span>
             </a>
@@ -57,7 +57,15 @@
               <i class="far fa-eye"></i>
               <span>Lihat Laporan</span>
             </a>
+          </li>  
+
+          <li>
+            <a href="login/Logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Log Out</span>
+            </a>
           </li>   
+
       </div>
       <!-- sidebar-menu  -->
     </div>

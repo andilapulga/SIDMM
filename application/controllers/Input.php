@@ -11,27 +11,26 @@ class Input extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('input');
+		
 	}
 
 
 
 						public function tambah(){
-						$data=array(
-						'username'=>$this->input->post('pusername'),
-						'nama_kegiatan'=>$this->input->post('pnamaKegiatan'),
-						'jenis_kegiatan'=>$this->input->post('pjenisKegiatan'),
-						'jenis_anggaran'=>$this->input->post('pjenisAnggaran'),
-						'tahap_kegiatan'=>$this->input->post('ptahap'),
-						'tanggal_kegiatan'=>$this->input->post('ptanggal'),
-						'biaya_bahan'=>$this->input->post('pbiayabahan'),
-						'biaya_operasional'=>$this->input->post('pbiayaOP'),
-						'biaya_takterduga'=>$this->input->post('biayatak'),
-						'total_biaya'=>$this->input->post('ptotal'),
-						'presentase_keberhasilan'=>$this->input->post('ppres'),
-						'penanggung_jawab'=>$this->input->post('ppj'),
-						'dokumentasi'=>$this->input->post('pdok'),
-						'no_hp'=>$this->input->post('pNoHp')
+					
+							$nama_kegiatan=$this->input->post('pnamakegiatan');
+							$jenis_kegiatan=$this->input->post('pjeniskegiatan');
+							$tahap_kegiatan= $this->input->post('ptahapkegiatan');
+							$tanggal_kegiatan= $this->input->post('ptanggalkegiatan');
 						
+
+						$data=array(
+						'id_desa'=>$this->M_input->get_iddesa($_SESSION['nama']),
+						'nama_kegiatan'=>$nama_kegiatan,
+						'jenis_kegiatan'=>$jenis_kegiatan,
+						'tahap_kegiatan'=>$tahap_kegiatan,
+						'tanggal_kegiatan'=>$tanggal_kegiatan
+					
 						);
 					$dr=$this->M_input->inputdata($data);
 echo $dr;

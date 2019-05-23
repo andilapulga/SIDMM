@@ -6,10 +6,15 @@ class Tambahdesa extends CI_Controller {
 		parent::__construct();		
 		$this->load->model('M_tambahdesa');
 		$this->load->helper('url');
+		
+		if(!$this->session->userdata("status"))
+			redirect("welcome");
 	}
 
 	public function index()
 	{
+		
+		
 		$this->load->view('tambahdesa');
 	}
 

@@ -23,7 +23,11 @@ class opsidesa extends CI_Controller {
 		parent::__construct();		
 		$this->load->model('M_inputper');
 		$this->load->helper('url');
+		if(!$this->session->userdata("status"))
+		redirect("welcome");
 	}
+
+
 	public function index()
 	{
 		$this->data['nama_desa']= $this->M_inputper->ambildesa();

@@ -1,34 +1,25 @@
 $(document).ready(function(){
+    $('#datepicker').datepicker({
+        uiLibrary: 'bootstrap4'
+    });
     $('#submit').click(function(){
-        // alert("gsdsg")
+        // alert($('#nama_laporan').val())
       
         $.ajax({
             url:'input/tambah',
             method:'POST',
             data:{
-                pusername:$('#username').val(),
-                pnamaKegiata:$('#nama_kegiatan').val(),
-                pjenisKegiatan:$('#jenis_kegiatan').val(),
-                pjenisAnggaran:$('#jenis_anggaran').val(),
-                ptahap:$('#tahap_kegiatan').val(),
-                ptanggal:$('#tanggal_kegiatan').val(),
-                pbiayabahan:$('#biaya_bahan').val(),
-                pbiayaOP:$('#biaya_operasional').val(),
-                pbiayaTak:$('#biaya_takterduga').val(),
-                ptotal:$('#total_biaya').val(),
-                ppres:$('#presentase_keberhasilan').val(),
-                ppj:$('#penanggung_jawab').val(),
-                pdok:$('#dokumentasi').val(),
-                pNoHp:$('#no_hp').val()
-             
-            
+                pnamakegiatan:$('#nama_kegiatan').val(),
+                pjeniskegiatan:$('#jenis_kegiatan').val(),
+                ptahapkegiatan:$('#tahap_kegiatan').val(),
+                ptanggalkegiatan:$('#datepicker').val(),
                
             },
-            success:function(say){
-                alert(say)
-                $('#pesan').empty();
-                $('#pesan').html('<p class="success">success</p>')
-            }
+    //         success:function(say){
+    //             alert(say)
+    //             $('#pesan').empty();
+    //             $('#pesan').html('<p class="success">success</p>')
+    //         }
         });
       
     });

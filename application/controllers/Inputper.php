@@ -23,6 +23,9 @@ class Inputper extends CI_Controller {
 		parent::__construct();		
 		$this->load->model('M_inputper');
 		$this->load->helper('url');
+		if(!$this->session->userdata("status"))
+		redirect("welcome");
+
 	}
 
 	public function index()
@@ -38,7 +41,6 @@ class Inputper extends CI_Controller {
 						'password'=>$this->input->post('ppassword'),
 						'nama'=>$this->input->post('pnama'),
 						'level'=>$this->input->post('plevel'),
-						
 						'no_hp'=>$this->input->post('pNoHp')
 						);
 	

@@ -9,7 +9,7 @@ $(document).ready(function(){
                 pusername:$('#username').val(),
                 ppassword:$('#password').val(), 
                 pnama:$('#nama').val(),
-                pidDesa:$('#id_desa').val(),
+                pid_desa:$('#id_desa').val(),
                 plevel:$('#level').val(),
                 pNoHp:$('#no_hp').val() 
             },

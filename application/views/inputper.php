@@ -24,7 +24,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    Laporan
+                    Tambah Perangkat Baru
                 </div>
                 <div class="card-body">
                 <form>
@@ -61,7 +61,7 @@
                       <div class="form-group row">
                       <label for="inputNama" class="col-sm-3 col-form-label"><strong>ID Desa</strong></label>
                       <div class="col-sm-9">
-                      <select class="form-control" id="sel1">
+                      <select class="form-control" id="id_desa">
                       <option value="">Pilih Desa . . . . </option>                     <?php
                      foreach ($ambildesa as $key) {
                     ?>

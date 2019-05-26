@@ -23,7 +23,7 @@
         <div class="col-md-10">
         <div class="card">
             <div class="card-header bg-dark text-white text-center">
-                <h3>PILIH DESA ANDA</h3>
+                <h3>PILIH LAPORAN</h3>
             </div>
             <div class="card-body">
                 <br><br>
@@ -31,18 +31,32 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-10 ">
                         <div class="row">
+
+
+                        <table class="table table-striped">
+    <thead>
+      <tr>
+      <th>No</th>
+        <th>Nama Kegiatan</th>
+        <th>Tanggal Kegiatan</th>
+        <th>Dana</th>
+      </tr>
+    </thead>
+    <tbody>
+    <?php $nomor=1; foreach($laporan as $desa_baru){?>
+      <tr>
+      <td><?php echo $nomor++?> </td>
+        <td><a href=''><?php echo $desa_baru ->nama_kegiatan?></a></td>
+        <td><?php echo $desa_baru ->tanggal_kegiatan?></td>
+        <td></td>
+      </tr>
+      <?php } ?>
+    </tbody>
+  </table>
                       
-                        <?php foreach($nama_desa as $desa) { ?>
-                        
-                        <div class="col-md-6 mb-2 ">
-                                    
-                                 <a href="<?php echo base_url('desa/read/').$desa->id_desa?>" type="button" class="btn btn-success btn-lg btn-block"><?php echo ($desa->nama_desa)?>                                           </a>
-                                 
-                            </div>
-                            <?php }?>
-                            <div class="col-md-12 mb-0">
-                            <a href="<?php echo base_url()?>tambahdesa" type="button" class="btn btn-primary btn-block"></h3>Tambah Desa</a></div>
-                    
+                       
+
+
                             
                         </div>
                     </div>

@@ -66,7 +66,7 @@
           </li>
 
           <li>
-            <a href="plogin/Logout">
+            <a href="<?php echo base_url(); ?>login/logout">
               <i class="fas fa-sign-out-alt"></i>
               <span>Log Out</span>
             </a>

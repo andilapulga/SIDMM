@@ -41,6 +41,7 @@ class Inputper extends CI_Controller {
 						'password'=>$this->input->post('ppassword'),
 						'nama'=>$this->input->post('pnama'),
 						'level'=>$this->input->post('plevel'),
+						'id_desa'=>$this->input->post('pid_desa'),
 						'no_hp'=>$this->input->post('pNoHp')
 						);
 	

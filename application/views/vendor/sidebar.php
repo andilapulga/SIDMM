@@ -39,7 +39,7 @@
             <span>General</span>
           </li>
           <li>
-            <a href="#">
+            <a href="dashboard">
               <i class="fas fa-tachometer-alt"></i>
               <span>Dashboard</span>
             </a>
@@ -71,10 +71,10 @@
     </div>
     <!-- sidebar-content  -->
     <div class="sidebar-footer">
-      <a href="#">
+      <a href="https://web.whatsapp.com/">
         <i class="fab fa-whatsapp"></i>
       </a>
-      <a href="#">
+      <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin">
         <i class="fa fa-envelope"></i>
       </a>
      

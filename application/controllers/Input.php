@@ -6,15 +6,17 @@ class Input extends CI_Controller {
 		parent::__construct();		
 		$this->load->model('M_input');
 		$this->load->helper('url');
-	}
+		if(!$this->session->userdata("status"))
+		redirect("welcome");
+	} 
 
 	public function index()
 	{
-		$this->load->view('input');
+		$this->data['ambildana']= $this->M_input->ambildana();
+		$this->load->view('input',$this->data);
 		
 	}
-
-
+					
 
 						public function tambah(){
 					
@@ -22,14 +24,33 @@ class Input extends CI_Controller {
 							$jenis_kegiatan=$this->input->post('pjeniskegiatan');
 							$tahap_kegiatan= $this->input->post('ptahapkegiatan');
 							$tanggal_kegiatan= $this->input->post('ptanggalkegiatan');
+							$biaya_bahan= $this->input->post('pbiayabahan');
+							$biaya_operasional= $this->input->post('pbiayaoperasional');
+							$biaya_takterduga= $this->input->post('pbiayatakterduga');
+							$id_dana= $this->input->post('piddana');
+							$keberhasilan= $this->input->post('pkeberhasilan');
+							$gambar1= $this->input->post('pgambar1');
+							$gambar2= $this->input->post('pgambar2');
+							$gambar3= $this->input->post('pgambar3');
+							
 						
 
 						$data=array(
 						'id_desa'=>$this->M_input->get_iddesa($_SESSION['nama']),
+						'penanggung_jawab'=>$this->M_input->get_pj($_SESSION['nama']),
 						'nama_kegiatan'=>$nama_kegiatan,
 						'jenis_kegiatan'=>$jenis_kegiatan,
 						'tahap_kegiatan'=>$tahap_kegiatan,
-						'tanggal_kegiatan'=>$tanggal_kegiatan
+						'tanggal_kegiatan'=>$tanggal_kegiatan,
+						'biaya_bahan'=>$biaya_bahan,
+						'biaya_operasional'=>$biaya_operasional,
+						'biaya_takterduga'=>$biaya_takterduga,
+						'total_biaya'=>$biaya_bahan+$biaya_operasional+$biaya_takterduga,
+						'id_dana'=>$id_dana,
+						'keberhasilan'=>$keberhasilan,
+						'gambar1'=>$gambar1,
+						'gambar2'=>$gambar2,
+						'gambar3'=>$gambar3
 					
 						);
 					$dr=$this->M_input->inputdata($data);

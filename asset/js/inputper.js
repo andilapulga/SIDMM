@@ -15,9 +15,15 @@ $(document).ready(function(){
             },
             success:function(say){
                 alert(say)
-               
+                $('#username').val(""),
+                $('#password').val(""), 
+                $('#nama').val(""),
+                $('#id_desa').val(""),
+                $('#level').val(""),
+                $('#no_hp').val("") 
             }
        });
+       
       
     });
 });

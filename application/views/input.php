@@ -106,26 +106,20 @@
                   </div>
 
                   <div class="form-group row">
-                      <label for="inputPassword" class="col-sm-3 col-form-label"><strong>Dokumentasi 1</strong></label>
-                      <div class="col-sm-9">
-                      
-                      <input type="file" id="gambar1">
-                      </div> 
-                  </div>
-
-                  <div class="form-group row">
-                      <label for="inputPassword" class="col-sm-3 col-form-label"><strong>Dokumentasi 2</strong></label>
-                      <div class="col-sm-9">
-                      <input type="file" id="gambar2">
-                      </div> 
-                  </div>
-
-                  <div class="form-group row">
-                      <label for="inputPassword" class="col-sm-3 col-form-label"><strong>Dokumentasi 3</strong></label>
-                      <div class="col-sm-9">
-                      <input type="file" id="gambar3">
-                      </div> 
-                  </div>
+                  <label>Select Multiple Files</label>
+                        </div>
+                        <div class="col-md-6">
+                        <input type="file" name="files" id="files" multiple />
+                        </div>
+                        <div style="clear:both"></div>
+                        <br />
+                        <br />
+                        <div id="uploaded_images"></div>
+                        </div>
+                        
+                     
+                        </div>
+                        </div>
                   <div class="form-group row">
                   <label for="inputPassword" class="col-sm-3 col-form-label"></label>
                       <div class="col-sm-9">

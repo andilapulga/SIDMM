@@ -8,7 +8,7 @@
     <title>welcome</title>
 </head>
 <body>
-<?php $this->load->view('vendor/sidebarpen');?>
+<?php $this->load->view('vendor/sidebar');?>
 
 <!-- sidebar-wrapper  -->
 <main class="page-content">

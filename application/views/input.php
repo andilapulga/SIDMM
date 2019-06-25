@@ -106,28 +106,23 @@
                   </div>
 
                   <div class="form-group row">
-                  <label>Select Multiple Files</label>
-                        </div>
-                        <div class="col-md-6">
-                        <input type="file" name="files" id="files" multiple />
-                        </div>
-                        <div style="clear:both"></div>
-                        <br />
-                        <br />
-                        <div id="uploaded_images"></div>
-                        </div>
-                        
-                     
-                        </div>
-                        </div>
+                    <input type="file" name="files" class="col-sm-3 col-form-label" id="files" multiple />
+                      <div class="col-sm-9">
+                      <input type="text" class="form-control" id="uploaded_images" placeholder="">
+                      </div> 
+                  </div>
+
+                  <div class="form-group row" id="tampil_gambar">
+                  </div>
+
                   <div class="form-group row">
                   <label for="inputPassword" class="col-sm-3 col-form-label"></label>
                       <div class="col-sm-9">
                       <button  class="btn btn-dark btn-block" id="submit" >Submit</button>
                       </div> 
-                    
-          
                   </div>
+
+                  
       
               </form>
     

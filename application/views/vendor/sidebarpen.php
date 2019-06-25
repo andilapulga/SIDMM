@@ -45,9 +45,9 @@
           </li>
 
           <li>
-            <a href="Opsidesa">
+            <a href="tambahdesa">
               <i class="fas fa-marker"></i>
-              <span>Lihat / Tambah Desa</span>
+              <span>Tambah Desa</span>
             </a>
           </li> 
 

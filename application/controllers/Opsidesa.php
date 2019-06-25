@@ -34,4 +34,32 @@ class opsidesa extends CI_Controller {
 		$this->load->view('opsidesa',$this->data);
 		
 	}
+function aksi_login(){
+    $username = $this->input->post('username');
+    $password = $this->input->post('password');
+
+    $where = array(
+        'username' => $username,
+        'password' => $password,
+        'level'=>'1'
+        );
+    $cek = $this->M_login->cek_login($where);
+   
+    if($cek > 0){
+
+        $data_session = array(
+            'nama' => $username,
+            'status' => "login"
+            );
+
+        $this->session->set_userdata($data_session);
+
+		redirect(base_url().'dashboard', $data_session);
+	
+
+    }else{
+        echo "Username dan password salah !";
+    }
+}
+
 }

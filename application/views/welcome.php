@@ -31,7 +31,7 @@
                             <a href="<?php echo base_url()?>login"type="button" class="btn btn-primary btn-lg btn-block"><h3 class='fas fa-user-edit'></h3> perangkat</a>
                             </div>
                             <div class="col-md-4 mb-3">
-                            <a href="<?php echo base_url()?>Opsidesa" type="button" class="btn btn-success btn-lg btn-block"><h3 class='fas fa-users'></h3>masyarakat</a></div>
+                            <a href="<?php echo base_url()?>laporan" type="button" class="btn btn-success btn-lg btn-block"><h3 class='fas fa-users'></h3>masyarakat</a></div>
                         </div>
                     </div>
                     <div class="col-md-1"></div>

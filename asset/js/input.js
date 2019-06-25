@@ -18,9 +18,8 @@ $(document).ready(function(){
                 pbiayatakterduga:$('#biaya_takterduga').val(),
                 piddana:$('#id_dana').val(),
                 pkeberhasilan:$('#keberhasilan').val(),
-                pgambar1:$('#gambar1').val(),
-                pgambar2:$('#gambar2').val(),
-                pgambar3:$('#gambar3').val()
+                puploaded_images:$('#uploaded_images').val(),
+              
                
             },
             success:function(say){
@@ -34,11 +33,11 @@ $(document).ready(function(){
                 $('#biaya_takterduga').val(""),
                 $('#id_dana').val(""),
                 $('#keberhasilan').val(""),
-                $('#gambar1').val(""),
-                $('#gambar2').val(""),
-                $('#gambar3').val("")
-
+                $('#uploaded_images').val("")
+            
             }
+
+            
 
 
             
@@ -77,12 +76,21 @@ $(document).ready(function(){
             processData:false,
             beforeSend:function()
             {
-            $('#uploaded_images').html("<label class='text-success'>Uploading...</label>");
+            $('#uploaded_images').val("Uploading...");
             },
             success:function(data)
             {
-            $('#uploaded_images').html(data);
+            $("#tampil_gambar").html("")
+            $('#uploaded_images').val(data);
             $('#files').val('');
+            var datagambar = data.split(',');
+            $.each(datagambar, function(index, value) { 
+                $("#tampil_gambar").append(`
+                <div class="col-sm-3">
+                    <img src="./asset/images/`+value+`" alt="..." class="img-thumbnail">
+                    </div>
+                    `)
+              });
             }
         })
         }

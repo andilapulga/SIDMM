@@ -1,13 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Desa extends CI_Controller {
-   
-        function __construct(){
-            parent::__construct();		
-            $this->load->model('M_desa');
-            $this->load->helper('url');
-        }
+class opsidesaper extends CI_Controller {
+
 
 	/**
 	 * Index Page for this controller.
@@ -24,21 +19,19 @@ class Desa extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function read($id)
+	function __construct(){
+		parent::__construct();		
+		$this->load->model('M_inputper');
+		$this->load->helper('url');
+		if(!$this->session->userdata("status"))
+		redirect("welcome");
+	}
+
+
+	public function index()
 	{
-        // var_dump($this->M_desa->get_laporan($id));
-
-        $this->data['laporan']=$this->M_desa->get_laporan($id);
-        $this->load->view('laporan/desa',$this->data);
-
-       
-
+		$this->data['nama_desa']= $this->M_inputper->ambildesa();
+		$this->load->view('opsidesaper',$this->data);
+		
 	}
-	public function detail($id_laporan){
-		$this->data['laporan']=$this->M_desa->get_detail($id_laporan);
-		$this->load->view('detail',$this->data);
-
-	}
-	
-	
 }

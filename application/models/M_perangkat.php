@@ -1,5 +1,5 @@
 <?php
-class M_desa extends CI_Model{
+class M_perangkat extends CI_Model{
 
 
     function get_laporan($id){

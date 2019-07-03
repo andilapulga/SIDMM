@@ -3,8 +3,10 @@ $(document).ready(function(){
         uiLibrary: 'bootstrap4'
     });
     $('#submit').click(function(){
-    
-      
+    if($('#nama_kegiatan').val()==""){
+        alert("Tidak ada data yang diinputkan")
+    }
+    else{
         $.ajax({
             url:'input/tambah',
             method:'POST',
@@ -43,6 +45,10 @@ $(document).ready(function(){
             
 
         });
+
+    }
+      
+       
       
     });
 

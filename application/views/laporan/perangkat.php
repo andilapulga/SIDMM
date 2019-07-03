@@ -8,7 +8,7 @@
     <title>welcome</title>
 </head>
 <body>
-<?php $this->load->view('vendor/sidebarpen');?>
+<?php $this->load->view('vendor/sidebar');?>
 <?php echo $_SESSION['nama'];?>
 
 
@@ -134,7 +134,7 @@
               <div class="col-sm-1"></div>
               </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" id="print">Cetak</button>
+        <button type="button" class="btn btn-default" id="print">Cetak</button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
         </div>
       </div>

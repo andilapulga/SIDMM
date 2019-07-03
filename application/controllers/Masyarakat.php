@@ -1,11 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Desa extends CI_Controller {
+class Masyarakat extends CI_Controller {
    
         function __construct(){
             parent::__construct();		
-            $this->load->model('M_desa');
+            $this->load->model('M_masyarakat');
             $this->load->helper('url');
         }
 
@@ -28,14 +28,14 @@ class Desa extends CI_Controller {
 	{
         // var_dump($this->M_desa->get_laporan($id));
 
-        $this->data['laporan']=$this->M_desa->get_laporan($id);
-        $this->load->view('laporan/desa',$this->data);
+        $this->data['laporan']=$this->M_masyarakat->get_laporan($id);
+        $this->load->view('laporan/masyarakat',$this->data);
 
        
 
 	}
 	public function detail($id_laporan){
-		$this->data['laporan']=$this->M_desa->get_detail($id_laporan);
+		$this->data['laporan']=$this->M_masyarakat->get_detail($id_laporan);
 		$this->load->view('detail',$this->data);
 
 	}

@@ -51,7 +51,7 @@
 
                       <div class="form-group row">
                       <label for="inputId_desa" class="col-sm-3 col-form-label"><strong>Level</strong></label>
-                      <div class="col-sm-9">
+                      <div class="col-sm-9"> 
                       <input type="text" class="form-control" id="level" placeholder="">
                       </select>
                     

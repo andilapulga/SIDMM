@@ -8,7 +8,7 @@
     <title>welcome</title>
 </head>
 <body>
-<?php $this->load->view('vendor/sidebar');?>
+
 
 <!-- sidebar-wrapper  -->
 <main class="page-content">
@@ -36,7 +36,7 @@
                         
                         <div class="col-md-6 mb-2 ">
                                     
-                                 <a href="<?php echo base_url('perangkat/read/').$desa->id_desa?>" type="button" class="btn btn-success btn-lg btn-block"><?php echo ($desa->nama_desa)?>                                           </a>
+                                 <a href="<?php echo base_url('masyarakat/read/').$desa->id_desa?>" type="button" class="btn btn-success btn-lg btn-block"><?php echo ($desa->nama_desa)?>                                           </a>
                                  
                             </div>
                             <?php }?>

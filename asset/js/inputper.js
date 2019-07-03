@@ -1,7 +1,9 @@
 $(document).ready(function(){
     $('#submit').click(function(){
-        username=$('#username').val()
-      
+        if($('#username').val()==""){
+            alert("Tidak ada data yang diinputkan")
+        }
+        else{
         $.ajax({
             url:'inputper/tambah',
             method:'POST',
@@ -24,6 +26,6 @@ $(document).ready(function(){
             }
        });
        
-      
+        }
     });
 });

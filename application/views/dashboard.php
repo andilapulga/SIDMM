@@ -14,7 +14,10 @@
 		<div class=isi-slider>
 			<img src="asset/images/g1.jpg" alt="Gambar 1">
 			<img src="asset/images/g2.jpg" alt="Gambar 2">
-			<img src="asset/images/logo_au.jpg" alt="Gambar 3">
+			<img src="asset/images/g3.jpg" alt="Gambar 3">
+            <img src="asset/images/g4.jpg" alt="Gambar 4">
+            <img src="asset/images/g5.jpg" alt="Gambar 5">
+         
 		</div>
 	</div>
 	

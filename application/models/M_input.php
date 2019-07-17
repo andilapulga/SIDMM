@@ -1,5 +1,8 @@
 <?php
 class M_input extends CI_Model{
+    public $table='tes';
+    public $id='id_lpaoran';
+    public $order='DESC';
 
     function inputdata($data){
         $this->db->insert('tes',$data);
@@ -25,6 +28,18 @@ class M_input extends CI_Model{
          return $this->db->get('dana')->result();
          
      }
+     function edit_data($where,$table){		
+        return $this->db->get_where($table,$where);
+    }
+    function update_data($id,$data){
+		$this->db->where($this->id,$id);
+		$this->db->update($this->table,$data);
+    }	
+    function get_by_id($id)
+    {
+        $this->db->where('id_lpaoran',$id);
+        return $this->db->get($this->table)->row();
+    }
 
 
 } 

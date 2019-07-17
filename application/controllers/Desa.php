@@ -26,7 +26,7 @@ class Desa extends CI_Controller {
 	 */
 	public function read($id)
 	{
-        // var_dump($this->M_desa->get_laporan($id));
+
 
         $this->data['laporan']=$this->M_desa->get_laporan($id);
         $this->load->view('laporan/desa',$this->data);

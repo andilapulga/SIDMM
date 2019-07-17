@@ -66,6 +66,13 @@
           </li>
 
           <li>
+            <a href="<?php echo base_url(); ?>Instruction">
+              <i class="far fa-eye"></i>
+              <span>Instruksi</span>
+            </a>
+          </li>
+
+          <li>
             <a href="<?php echo base_url(); ?>login/logout">
               <i class="fas fa-sign-out-alt"></i>
               <span>Log Out</span>

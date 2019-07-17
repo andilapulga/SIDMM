@@ -53,9 +53,16 @@
           </li> 
 
           <li>
-            <a href="opsidesaper">
+            <a href="<?php echo base_url(); ?>opsidesaper">
               <i class="far fa-eye"></i>
               <span>Lihat Laporan</span>
+            </a>
+          </li>  
+
+          <li>
+            <a href="<?php echo base_url(); ?>show_instruction">
+              <i class="far fa-eye"></i>
+              <span>Lihat berita</span>
             </a>
           </li>  
 

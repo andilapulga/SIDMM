@@ -173,6 +173,7 @@
         <?php echo $desa_baru ->nama_kegiatan?></a></td>
         <td><?php echo $desa_baru ->tanggal_kegiatan?></td>
         <td><?php echo $desa_baru ->id_dana?></td>
+        <td> <a href="<?php echo base_url('input/edit/').$desa_baru->id_lpaoran?>" type="button" class="btn btn-success btn-lg btn-block"><h3 class='fas fa-edit'></h3>edit</a></div></td>
        
         <td></td>
       </tr>
